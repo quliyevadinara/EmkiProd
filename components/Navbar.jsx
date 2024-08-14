@@ -71,13 +71,13 @@ const Navbar = () => {
                 <a href="/events">Events</a>
               </li>
               <li>
-                <a href="">Blog</a>
+                <a href="/blogs">Blog</a>
               </li>
               <li>
-                <a href="">Sponsors</a>
+                <a href="/sponsors">Sponsors</a>
               </li>
               <li>
-                <a href="">About us</a>
+                <a href="/aboutUs">About us</a>
               </li>
             </ul>
             <div className="navBtnItems">

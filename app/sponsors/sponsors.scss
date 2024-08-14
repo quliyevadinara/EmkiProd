@@ -1,0 +1,185 @@
+// Sponsors start
+#heroSponsors{
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    background: linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+}
+.sponsorsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.sponsorsImg{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+.sponsorsAbout{
+    color: #ffffff;
+    padding: 20px;
+    h1{
+        font-size: 50px;
+        margin: 0px;
+    }
+    p{
+        font-size: 20px;
+       letter-spacing: 0.7;
+    }
+}
+#sponsorsSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101426;
+    padding:30px 0px;
+    .sponsorsCtn{
+        h1{
+            color: #ffffff;
+            font-size: 28px;
+        }
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+.sponsorsImgs{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 20px;
+    div{
+        border: 1px solid #192038;
+        border-radius: 10px;
+        background-color: rgb(21, 26, 48);
+        max-height: 186px;
+        max-width: 186px;
+        min-height: 186px;
+        min-width: 186px;
+        padding: 25px;
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+   
+}
+#ourvaluesSec{
+    width: 100%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: flex-start;
+    background-color:#101426;
+    h1{
+        color: #ffffff;
+        font-size: 28px;
+    }
+}
+.ourvaluesContainer{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.ourvaluesItems{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    border-radius: 32px;
+    padding: 68px 50px;
+    background: linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+}
+.ourvaluesItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .valuesImg{
+        
+       
+    }
+    .ourvaluesAbout{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        p{
+            border-bottom: 1px solid #e32682;
+            width: 100%;
+            color: #edf1f7;
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 6px;
+    margin: 0px;
+        }
+        span{
+            color: #e4e9f2;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-top: 12px;
+        }
+    }
+}
+// sponsors responsive start
+@media only screen and (max-width: 1080px) {
+
+.sponsorsContainer{
+    grid-template-columns: 1fr;
+    
+    gap: 20px;
+}
+#heroSponsors{
+    height: 120vh;
+}
+}
+@media only screen and (max-width: 600px) {
+   .sponsorsImgs{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+}
+@media only screen and (max-width: 1200px) {
+    .ourvaluesItems{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 20px 20px;
+    }
+    .ourvaluesItem{
+        justify-content: flex-start;
+        p{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .ourvaluesItems{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 10px 5px;
+    }
+}
+@media only screen and (max-width: 400px) {
+ .valuesImg{
+    width: 100px;
+ }
+}
+
+// sponsors responsive end
+// sponsors end
