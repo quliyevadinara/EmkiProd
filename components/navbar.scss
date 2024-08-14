@@ -1,0 +1,104 @@
+// navbar start
+#heroNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.navResponsive {
+  display: none;
+}
+.navContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101426;
+  border-radius: 0 0 24px 24px;
+  padding: 20px 40px;
+}
+.navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    padding: 16px;
+    list-style-type: none;
+  }
+  a:hover {
+    color: rgb(227, 37, 124);
+    transition: 0.5s;
+  }
+  a {
+    text-decoration: none;
+    color: #f7f9fc;
+    font-size: 20px;
+  }
+}
+.navBtnItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ticketBtn {
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.ticketBtn:hover {
+  background-color: rgb(227, 37, 124);
+  transition: 0.5s;
+  color: #f7f9fc;
+}
+.languageBtn {
+  padding: 5px;
+  background-color: #101426;
+  color: #f7f9fc;
+  font-size: 20px;
+ button{
+    gap: 10px;
+    color: #f7f9fc;
+    font-size: 20px;
+ }
+ Menu{
+    background-color: #101426;
+ }
+}
+.languageItems {
+  color: #f7f9fc;
+  li {
+    list-style-type: none;
+  }
+}
+// navbar responsive start
+@media only screen and (max-width: 1080px) {
+  .navContainer {
+    display: none;
+  }
+  .navResponsive {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #101426;
+    i{
+        color: #f7f9fc;
+        font-size: 30px;
+    }
+    .navTicketIcon{
+        i:hover{
+            color: rgb(227, 37, 124);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+  }
+  
+}
+// navbar responsive end
+// navbar end
