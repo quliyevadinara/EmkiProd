@@ -1,0 +1,50 @@
+#ourvaluesSec {
+  width: 100%;
+  color: white;
+  background-color: #101426;
+}
+#ourvaluesSec .our-values-container {
+  width: 100%;
+  color: white;
+  background-color: #101426;
+  padding-bottom: 4rem;
+}
+#ourvaluesSec .our-values-container .head-text {
+  font-size: 28px;
+  margin: 8.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+#ourvaluesSec .our-values-container .container {
+  width: 80%;
+  height: 500px;
+  font-size: 15px;
+  border-radius: 30px;
+  color: white;
+  margin: auto;
+  margin-top: 2rem;
+  background: linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, 0.4), rgba(21, 26, 48, 0.4));
+}
+#ourvaluesSec .our-values-container .container .our-values-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5rem;
+}
+#ourvaluesSec .our-values-container .container .our-values-box .details {
+  display: flex;
+  margin: 1.5rem;
+}
+#ourvaluesSec .our-values-container .container .our-values-box .details .title-desc {
+  display: block;
+  margin-left: 1rem;
+}
+#ourvaluesSec .our-values-container .container .our-values-box .details .title-desc h1 {
+  font-family: Euclid Circular A, sans-serif;
+  width: 80%;
+  border-bottom: 2px solid rgb(107, 23, 55);
+}
+#ourvaluesSec .our-values-container .container .our-values-box .details .title-desc p {
+  width: 90%;
+  font-weight: 400;
+  font-size: 16px;
+}/*# sourceMappingURL=ourvalues.css.map */

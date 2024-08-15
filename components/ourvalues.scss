@@ -1,0 +1,58 @@
+#ourvaluesSec {
+    width: 100%;
+    color: white;
+    background-color: #101426;
+
+  .our-values-container {
+    width: 100%;
+    color: white;
+    background-color: #101426;
+    padding-bottom: 4rem;
+    .head-text{
+        font-size: 28px;
+        margin: 8.5rem;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    .container {
+      width: 80%;
+      height: 500px;
+      font-size: 15px;
+      border-radius: 30px;
+      color: white;
+      margin: auto;
+      margin-top: 2rem;
+      background: linear-gradient(
+          257deg,
+          #151a30,
+          #211d4d 28%,
+          #271630 70%,
+          #0f1836
+        ),
+        linear-gradient(0deg, rgba(21, 26, 48, 0.4), rgba(21, 26, 48, 0.4));
+      .our-values-box {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5rem;
+        .details {
+          display: flex;
+          margin: 1.5rem;
+          .title-desc {
+            display: block;
+            margin-left: 1rem;
+            h1 {
+              font-family: Euclid Circular A, sans-serif;
+              width: 80%;
+              border-bottom: 2px solid rgb(107, 23, 55);
+            }
+            p {
+              width: 90%;
+              font-weight: 400;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

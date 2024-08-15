@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.slider-components {
+  width: 190px; 
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px !important;
+}
+
+.slick-list {
+  height: 640px !important;
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  flex-direction: column;
+}
+
+.slick-arrow, .slick-prev {
+  display: none !important;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} *//*# sourceMappingURL=slider.css.map */
