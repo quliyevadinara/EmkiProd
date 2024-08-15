@@ -1,0 +1,63 @@
+.slider {
+  width: 380px;
+  height: 510px;
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 10px;
+}
+
+.slider img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+}
+
+.parent {
+  color: white;
+}
+
+.parent p {
+  margin: 2rem;
+}
+
+.custom-dot-list-style button {
+  display: none;
+}
+
+.slider .events-details {
+  width: 100%;
+  border: 1px solid #393646;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+}
+
+.name-price-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 1rem;
+}
+
+.name-price-details .price {
+  color: rgb(165, 41, 99);
+}
+
+.time-location-details {
+  font-size: 12px;
+  margin: 1rem;
+}
+
+.time-location-details span {
+  margin: 5px;
+  color: #d4d4d8;
+}
+
+.time-location-details .time {
+  margin-left: 0;
+} /*# sourceMappingURL=slider.css.map */
