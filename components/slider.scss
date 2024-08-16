@@ -1,54 +1,95 @@
-.slider {
-    width: 380px;
+.discover-events {
+  width: 85%;
+  margin: auto;
+  .slider {
+    position: relative;
+    width: 340px;
     height: 510px;
     margin: 0 20px;
     overflow: "hidden";
     padding: 10px;
+    button {
+      display: none;
+      position: absolute;
+      width: 140px;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border: none;
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      border-radius: 10px;
+      z-index: 100;
+      padding: 0.8rem;
+      cursor: pointer;
+    }
   }
-  
+  .slider:hover {
+    button{
+      display: block;
+    }
+    img {
+      opacity: 0.5;
+    }
+    .events-details {
+      background-color: white;
+      color: black;
+      .time-location-details span {
+        color: black;
+        font-weight: 500;
+      }
+    }
+  }
+
   .slider img {
     width: 100%;
     height: 350px;
     border-radius: 10px;
   }
-  
+
   .react-multi-carousel-list {
     padding: 0rem 0 2rem 0;
   }
-  
+
   .parent {
     color: white;
   }
   .parent p {
     margin: 2rem;
+    font-size: 28px;
+    font-weight: 700;
   }
-  
+
   .custom-dot-list-style button {
     display: none;
   }
-  
+
   .slider .events-details {
     width: 100%;
     border: 1px solid #393646;
     font-size: 15px;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
   }
-  
+
   .name-price-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 23px;
     margin: 1rem;
   }
   .name-price-details .price {
     color: rgb(165, 41, 99);
   }
-  
+
   .time-location-details {
-    font-size: 12px;
+    font-size: 15px;
     margin: 1rem;
+    font-weight: 600;
   }
   .time-location-details span {
     margin: 5px;
@@ -56,4 +97,5 @@
   }
   .time-location-details .time {
     margin-left: 0;
-  }/*# sourceMappingURL=slider2.css.map */
+  } /*# sourceMappingURL=slider2.css.map */
+}

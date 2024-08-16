@@ -2,13 +2,13 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { imagesdata } from "..//data/data";
-import "../components/slider.scss";
+import { blogData } from "..//data/data";
+import "../components/blogSlider.scss";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3,
+    slidesToSlide: 2,
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
@@ -22,34 +22,29 @@ const responsive = {
   },
 };
 
-const Slider = () => {
+const BlogsSlider = () => {
   return (
     <div className="parent">
-      <p>Discover Events</p>
+      <p>Blogs</p>
       <Carousel
         responsive={responsive}
         autoPlay={true}
         swipeable={true}
         draggable={true}
-        showDots={true}
+        showDots={false}
         infinite={true}
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {imagesdata.map((element, index) => {
+        {blogData.map((element, index) => {
           return (
             <div className="slider" key={index}>
               <button>Read more</button>
               <img src={element.link} alt="movie" />
-              <div className="events-details">
-                <div className="name-price-details">
-                  <span>{element.name}</span>
-                  <span className="price">{element.price}</span>
-                </div>
-                <div className="time-location-details">
-                  <span className="time">{element.time}</span>
-                  &bull;
-                  <span className="location">{element.location}</span>
+              <div className="blog-details">
+                <div className="title-desc-details">
+                  <span className="blog-title">{element.title}</span>
+                  <span className="desc">{element.description}</span>
                 </div>
               </div>
             </div>
@@ -59,4 +54,4 @@ const Slider = () => {
     </div>
   );
 };
-export default Slider;
+export default BlogsSlider;

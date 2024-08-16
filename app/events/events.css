@@ -1,16 +1,54 @@
 .container {
-  width: 100%;
+  width: 80%;
   padding-top: 8rem;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
+  margin: auto;
+}
+.container h1 {
+  color: white;
 }
 
 .single-events {
+  position: relative;
   width: 380px;
   height: 510px;
   margin: 0 20px;
   overflow: "hidden";
   padding: 10px;
+}
+.single-events button {
+  display: none;
+  position: absolute;
+  width: 140px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 100;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.single-events:hover button {
+  display: block;
+}
+.single-events:hover img {
+  opacity: 0.5;
+}
+.single-events:hover .events-details {
+  background-color: white;
+  color: black;
+}
+.single-events:hover .events-details .time-location-details span {
+  color: black;
+  font-weight: 500;
 }
 
 .single-events img {

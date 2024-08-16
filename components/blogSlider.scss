@@ -1,0 +1,120 @@
+#blogs-sec {
+  .blogs {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 2rem;
+    .slider {
+      position: relative;
+      width: 350px;
+      height: 300px;
+      margin: 0 20px;
+      padding: 10px;
+      button {
+        display: none;
+        position: absolute;
+        width: 140px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(221, 34, 121);
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 10px;
+        z-index: 1000;
+        padding: 0.8rem;
+        cursor: pointer;
+      }
+      .blog-title{
+        position: absolute;
+        top: 80%; 
+        width: 100%;
+        font-size: 20px;
+        font-weight: 900;
+        left: 55%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .slider:hover{
+      button{
+        display: block;
+      }
+      img {
+        opacity: 0.5;
+      }
+      .blog-details {
+        background-color: white;
+        color: black;
+        overflow: hidden;
+        .title-desc-details span {
+          color: black;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .slider img {
+      width: 100%;
+      height: 272px;
+      border-radius: 20px;
+      z-index: 1000;
+    }
+
+    .react-multi-carousel-list {
+      padding: 0rem 0 2rem 0;
+    }
+
+    .parent {
+      color: white;
+      p {
+        margin: 2rem;
+        font-size: 28px;
+      }
+    }
+
+    .custom-dot-list-style button {
+      display: none;
+    }
+
+    .slider .blog-details {
+      width: 100%;
+      border: 1px solid #393646;
+      font-size: 15px;
+      color: white;
+      border-radius: 10px;
+      margin-top: -40px;
+      .title-desc-details{
+        display: block !important;
+        height: 45px;
+        padding: 10px;
+        letter-spacing: 2px;
+        padding-top: 2.6rem;
+      }
+    }
+
+    .name-price-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      margin: 1rem;
+    }
+    .name-price-details .price {
+      color: rgb(165, 41, 99);
+    }
+
+    .time-location-details {
+      font-size: 12px;
+      margin: 1rem;
+    }
+    .time-location-details span {
+      margin: 5px;
+      color: #d4d4d8;
+    }
+    .time-location-details .time {
+      margin-left: 0;
+    } /*# sourceMappingURL=slider2.css.map */
+  }
+}
