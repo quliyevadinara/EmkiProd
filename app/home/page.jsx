@@ -52,7 +52,7 @@ function page() {
           <div className="sponsorsContainer">
             <div className="sponsorsAbout">
               <h1>Have A Project?</h1>
-              
+              {/* shbdshbhssss push etmek ucun yoxlayirdim*/}
               <p>
                 Show your event to the world through any platform. We are
                 leaders in streaming and broadcast services for events, offering
