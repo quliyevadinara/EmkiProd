@@ -1,13 +1,15 @@
-import React from 'react'
-import { imagesdata } from '@/data/data'
+import React from "react";
+import { imagesdata } from "@/data/data";
 import "../events/events.scss";
 function page() {
   return (
-    <div className='events-sec'>
-      <div className='container'>
-      {imagesdata.map((element, index) => {
+    <div className="events-sec">
+      <div className="container">
+        <h1>Events</h1> <br />
+        {imagesdata.map((element, index) => {
           return (
             <div className="single-events" key={index}>
+              <button>Read more</button>
               <img src={element.link} alt="movie" />
               <div className="events-details">
                 <div className="name-price-details">
@@ -25,7 +27,7 @@ function page() {
         })}
       </div>
     </div>
-  )
+  );
 }
 
-export default page
+export default page;
