@@ -22,7 +22,10 @@ function page() {
             </span>
             <br />
             <button>
-              <span>Events</span> <span className="icon"><GrFormNextLink /></span>
+              <span>Events</span>{" "}
+              <span className="icon">
+                <GrFormNextLink />
+              </span>
             </button>
           </div>
           <div className="slider-container">
@@ -49,6 +52,7 @@ function page() {
           <div className="sponsorsContainer">
             <div className="sponsorsAbout">
               <h1>Have A Project?</h1>
+              
               <p>
                 Show your event to the world through any platform. We are
                 leaders in streaming and broadcast services for events, offering

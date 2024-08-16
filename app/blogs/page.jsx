@@ -5,7 +5,8 @@ function page() {
   return (
     <div className="blog-sec">
       <div className="container">
-        <h1>Blogs</h1><br />
+        <h1>Blogs</h1>
+        <br />
         {blogData.map((element, index) => {
           return (
             <div className="single-blog" key={index}>
