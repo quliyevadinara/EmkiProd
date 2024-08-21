@@ -1,7 +1,9 @@
+'use client'
 import React from "react";
 import "./aboutUs.scss";
 import VerticalCarousel from "@/components/VerticalCarousel";
-import Slider from "@/components/Slider";
+import AppBar from '../../components/AppBar.jsx'
+
 function page() {
   return (
     <>
@@ -28,7 +30,7 @@ function page() {
         </section>
   
         <section>
-        
+
         </section>
       </main>
     </>

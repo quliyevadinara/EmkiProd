@@ -1,12 +1,19 @@
+"use client";
 import React from "react";
-import { imagesdata } from "@/data/data";
+// import { imagesdata } from "@/data/data";
 import "../events/events.scss";
+import { useGetAllCategoriesQuery, useGetPostsQuery } from "../services/apiSlice";
 function page() {
+
+  const { data, error, isLoading } = useGetAllCategoriesQuery();
+  console.log(data);
+  
   return (
+    
     <div className="events-sec">
       <div className="container">
         <h1>Events</h1> <br />
-        {imagesdata.map((element, index) => {
+        {data.map((element, index) => {
           return (
             <div className="single-events" key={index}>
               <button>Read more</button>

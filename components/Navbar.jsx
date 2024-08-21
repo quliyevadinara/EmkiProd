@@ -4,7 +4,10 @@ import "../components/navbar.scss";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { useTranslation } from "react-i18next";
+import '../components/i18n.js'
 const Navbar = () => {
+  const {t,i18n}=useTranslation();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -65,19 +68,19 @@ const Navbar = () => {
             </div>
             <ul className="navItems">
               <li>
-                <a href="/home">Home</a>
+                <a href="/home">{t('Home')}</a>
               </li>
               <li>
-                <a href="/events">Events</a>
+                <a href="/events">{t("Events")}</a>
               </li>
               <li>
-                <a href="/blogs">Blog</a>
+                <a href="/blogs">{t("Blog")}</a>
               </li>
               <li>
-                <a href="/sponsors">Sponsors</a>
+                <a href="/sponsors">{t("Sponsors")}</a>
               </li>
               <li>
-                <a href="/aboutUs">About us</a>
+                <a href="/aboutUs">{t("About us")}</a>
               </li>
             </ul>
             <div className="navBtnItems">
@@ -107,21 +110,21 @@ const Navbar = () => {
                 >
                   <MenuItem
                     onClick={() => {
-                      handleClose, setlang("EN");
+                      handleClose,i18n.changeLanguage('en'), setlang("EN");
                     }}
                   >
                     EN
                   </MenuItem>
                   <MenuItem
                     onClick={() => {
-                      handleClose, setlang("AZ");
+                      handleClose,i18n.changeLanguage('az'), setlang("AZ");
                     }}
                   >
                     AZ
                   </MenuItem>
                   <MenuItem
                     onClick={() => {
-                      handleClose, setlang("RU");
+                      handleClose,i18n.changeLanguage('ru'), setlang("RU");
                     }}
                   >
                     RU
@@ -130,7 +133,7 @@ const Navbar = () => {
               </div>
 
               <div>
-                <button className="ticketBtn">Buy Ticket</button>
+                <button className="ticketBtn">{t("Buy Ticket")}</button>
               </div>
             </div>
           </div>

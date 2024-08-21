@@ -5,8 +5,10 @@ import Slider from "@/components/Slider";
 import VerticalCarousel from "@/components/VerticalCarousel";
 import BlogsSlider from "@/components/BlogsSlider";
 import { GrFormNextLink } from "react-icons/gr";
-
+// import { useTranslation } from "react-i18next";
+// import '../../components/i18n.js'
 function page() {
+  // const {t}=useTranslation();
   return (
     <div>
       <div className="home-page">
