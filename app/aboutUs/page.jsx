@@ -30,7 +30,7 @@ function page() {
         </section>
   
         <section>
-
+          
         </section>
       </main>
     </>
